@@ -4247,7 +4247,8 @@ fieldset:disabled .btn {
   list-style: none;
 }
 
-.nav-link {
+.nav-link,
+.menu-item a {
   display: block;
   padding: 0.5rem 1rem;
   color: #8d75af;
@@ -4256,12 +4257,15 @@ fieldset:disabled .btn {
     border-color 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .nav-link {
+  .nav-link,
+  .menu-item a {
     transition: none;
   }
 }
 .nav-link:hover,
-.nav-link:focus {
+.nav-link:focus,
+.menu-item a:hover,
+.menu-item a:focus {
   color: #8d75af;
 }
 .nav-link.disabled {
