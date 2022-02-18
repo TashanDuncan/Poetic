@@ -5213,7 +5213,9 @@ fieldset:disabled .btn {
   font-weight: 700;
   line-height: 1;
   color: #fff;
+  background-color: #8d75af;
   text-align: center;
+  text-transform: capitalize;
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.25rem;
