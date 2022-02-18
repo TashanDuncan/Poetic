@@ -5,7 +5,8 @@
 
     <div class="">
     <?php if(has_post_thumbnail()):?>
-        <img class="img-fluid mb-3 img-thumbnail" src="<?php the_post_thumbnail_url()?>" alt="<?php the_title();?>">
+
+        <img class="img-fluid mb-3 img-thumbnail" src="<?php the_post_thumbnail_url('blog-small')?>" alt="<?php the_title();?>">
     <?php endif;?>
     </div>
     <?php the_content();?>

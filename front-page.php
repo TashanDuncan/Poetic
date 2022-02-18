@@ -70,7 +70,7 @@
             <hr class="divider" />
             <div class="row gx-4 gx-lg-5">
                 <div class="post-preview row align-items-center">
-                    <img class="post-img col-sm" src="./assets/273826097_1158935081596330_6386955499987353730_n.jpg">
+                    <img class="post-img col-sm" src="http://178.79.152.8/poeticflowerx.com/public_html/wp-content/uploads/2022/02/blogpostimage-1.png">
                     <div class="post-text col-sm ">
                         <a href="post.html">
                             <h2 class="post-title">Introduction to understanding poeticflowerx.</h2>
