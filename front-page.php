@@ -58,7 +58,12 @@
                 <h2 class="text-white mt-2">About Me</h2>
                 <hr class="divider divider-light" />
                 <div class="text-white-75 mb-4">
-                    <?php get_template_part('includes/section', 'content');?>
+                    <?php $query = new WP_Query( array( 'pagename' => 'about' ));?>
+
+                    <?php if( $query->have_posts() ): while( $query->have_posts() ): $query->the_post();?>
+                    <a class="text-white text-decoration-none" href="<?php the_permalink();?>"><?php the_excerpt();?> </a>
+
+                    <?php endwhile; else: endif;?>
                 </div>
                 <a class="btn btn-light btn-xl" href="#contact">Contact Me!</a>
             </div>
@@ -72,15 +77,18 @@
             src="wp-content/themes/poetic/images/273429983_639680010577185_6237326259307283658_n.jpg">
         <h2 class="text-center mt-0">My Blog</h2>
         <hr class="divider" />
+        <p>See the Latest Posts from my blog below!</p>
+        <hr class="my-4">
         <div class="row gx-4 gx-lg-5">
 
 
-            <?php get_template_part('includes/section', 'frontpage');?>
+            <?php get_template_part('includes/section', 'frontpageblog');?>
 
 
 
 
-            <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="category/blog/">Older
+            <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase"
+                    href="category/blog/">Older
                     Posts →</a></div>
 </section>
 <!-- Call to action-->
