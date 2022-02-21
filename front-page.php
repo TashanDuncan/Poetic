@@ -104,12 +104,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <?php echo do_shortcode("[products orderby='date']"); ?>
+                    <?php echo do_shortcode("[products limit='4' orderby='date']"); ?>
                 </div>
 
             </div>
             <div class="container px-4 px-lg-5 text-center">
-                <a class="btn btn-primary btn-xl" href="./shop">View All!</a>
+                <a class="btn btn-primary btn-xl" href="./shop">View All</a>
             </div>
         </div>
     </div>

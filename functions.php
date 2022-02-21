@@ -59,3 +59,16 @@ register_nav_menus(
 add_image_size( 'front-page', 624, 500, true);
 add_image_size( 'blog-large', 800, 400, true);
 add_image_size( 'blog-small', 300, 200, true);
+
+//filters
+
+add_filter( 'woocommerce_add_to_cart_fragments', 'add_to_cart_fragment' );
+
+function add_to_cart_fragment( $fragments ) {
+
+	global $woocommerce;
+
+	$fragments['.cart-num'] = '<span class="badge bg-dark text-white ms-1 rounded-pill cart-num">'. $woocommerce->cart->cart_contents_count .'</span>';
+ 	return $fragments;
+
+ }
