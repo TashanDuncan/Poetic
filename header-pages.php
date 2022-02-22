@@ -14,13 +14,14 @@
 
             ) );
         ?>
-                <form class="d-flex mx-4">
-            <a class="btn btn-outline-dark"  href="./basket">
-                <i class="bi-cart-fill me-1"></i>
-                Cart
-                <span class="badge bg-dark text-white ms-1 rounded-pill cart-num"><?php echo $woocommerce->cart->cart_contents_count ?></span>
-            </a>
-        </form>
+            <div class="d-flex mx-4">
+                <a class="btn btn-outline-dark" href="./basket">
+                    <i class="bi-cart-fill me-1"></i>
+                    Cart
+                    <span
+                        class="badge bg-dark text-white ms-1 rounded-pill cart-num"><?php echo $woocommerce->cart->cart_contents_count ?></span>
+                </a>
+            </div>
         </div>
 
 </nav>

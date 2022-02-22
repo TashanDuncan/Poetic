@@ -14,6 +14,14 @@
                 <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
+            <div class="d-flex mx-4">
+                <a class="btn btn-outline-dark nav-cart" href="./basket">
+                    <i class="bi-cart-fill me-1"></i>
+                    Cart
+                    <span
+                        class="badge bg-dark text-white ms-1 rounded-pill cart-num"><?php echo $woocommerce->cart->cart_contents_count ?></span>
+                </a>
+            </div>
         </div>
     </div>
 </nav>

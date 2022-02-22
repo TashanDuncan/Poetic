@@ -11782,7 +11782,8 @@ hr.divider-light {
     color: #fff;
   }
   #mainNav .navbar-nav .nav-item .nav-link,
-  #mainNav .navbar-nav .menu-item a {
+  #mainNav .navbar-nav .menu-item a
+   {
     color: rgba(255, 255, 255, 0.7);
     padding: 0 1rem;
   }
@@ -11807,7 +11808,8 @@ hr.divider-light {
     color: #8d75af;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link,
-  #mainNav.navbar-shrink .navbar-nav .menu-item a {
+  #mainNav.navbar-shrink .navbar-nav .menu-item a
+  {
     color: #212529;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover,
