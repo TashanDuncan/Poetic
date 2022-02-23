@@ -11,7 +11,9 @@
 
 <div class="post-preview row align-items-center">
     <?php if(has_post_thumbnail()):?>
-    <img class="post-img col-sm" src="<?php the_post_thumbnail_url("")?>">
+        <div class="post-img col-sm">
+        <a href="<?php the_permalink()?>"><img  src="<?php the_post_thumbnail_url("")?>" alt="<?php the_title()?>"></a>
+    </div>
     <?php endif;?>
     <div class="post-text col-sm ">
         <a href="<?php the_permalink();?>">
