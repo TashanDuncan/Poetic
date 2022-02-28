@@ -1,7 +1,18 @@
 <?php if( have_posts() ): while( have_posts() ): the_post();?>
 <div class="text-center">
+    <div>
+        <?php
+        $categories = get_the_category();
+        foreach($categories as $cat):?>
+
+        <a class="mx-1" href="<?php echo get_category_link($cat);?>">
+            <?php echo $cat->name;?>
+        </a>
+        <?php endforeach;?>
+    </div>
     <?php echo get_the_date();?>
-    <p>Post by <?php the_author();?> </p>
+    <p>Post by <?php echo get_the_author_posts_link()?></p>
+
 </div>
 <div class="row my-5">
     <?php if(has_post_thumbnail()):?>
@@ -20,16 +31,6 @@ foreach($tags as $tag):?>
         </a>
 
         <?php endforeach;?>
-        <div class="my-2">
-            <?php
-        $categories = get_the_category();
-        foreach($categories as $cat):?>
-
-            <a class="mx-1" href="<?php echo get_category_link($cat);?>">
-                <?php echo $cat->name;?>
-            </a>
-            <?php endforeach;?>
-        </div>
     </div>
 </div>
 
