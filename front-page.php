@@ -62,7 +62,7 @@
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8 text-center">
                 <img class="about-img"
-                    src="wp-content/themes/poetic/images/273481140_505752304311033_3960426121381137167_n.jpg">
+                    src="wp-content/themes/Poetic/images/273481140_505752304311033_3960426121381137167_n.jpg">
                 <h2 class="text-white mt-2">About Me</h2>
                 <hr class="divider divider-light" />
                 <div class="text-white-75 mb-4">
@@ -83,7 +83,7 @@
 <section class="page-section" id="blog">
     <div class="container text-center px-4 px-lg-5">
         <img class="blog-img mx-auto mb-4"
-            src="wp-content/themes/poetic/images/273429983_639680010577185_6237326259307283658_n.jpg">
+            src="wp-content/themes/Poetic/images/273429983_639680010577185_6237326259307283658_n.jpg">
         <h2 class="text-center mt-0">My Blog</h2>
         <hr class="divider" />
         <p>See the Latest Posts from my blog below!</p>
