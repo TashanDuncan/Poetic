@@ -9,7 +9,7 @@
 
         <div class="blog-content">
             <h3 class="post-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
-            <p class="post-meta">by <?php the_author_link();?></p>
+            <p class="post-meta">by  <?php echo get_the_author_posts_link()?></p>
             <?php the_excerpt();?>
             <a href="<?php the_permalink()?>" class="btn btn-primary text-uppercase">Read More</a>
         </div>
